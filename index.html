@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlackHat Qual 2024 Artifact</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        pre {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+        code {
+            color: #d63384;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Artifact (BlackHat Qual 2024)</h1>
+    <p><strong>Opening the hive with registry explorer:</strong></p>
+    <p>We need to find an executable file that is some type of malware. By opening the following path, we can view the running time and name of the file:</p>
+    <pre>HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\AppCompatCache\AppCompatCache</pre>
+    <p><em>(This technique is derived from the TryHackMe Windows Forensics 1 Room.)</em></p>
+    <p>At this location, two executable files (<code>files.exe</code>) are shown. One of them is:</p>
+    <p><code>DeadPotato.Net4.exe</code></p>
+
+    <h2>The Flag:</h2>
+    <p><code>BHFlagY{DeadPotato-NET4.exe_09/08/2024_22:42:13}</code></p>
+</body>
+</html>
